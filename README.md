@@ -66,7 +66,7 @@ Burn
 
 Features
  
-Artist will mint 5 tokens -- with a bonus token added randomly to one of the five
-Artist will sell tokens -- at a set price (~$50), hardcoded that you cannot sell for less than this (#numbergoup)
-Customer will sell token -- each producing a 3% royalty back to creator -- 6% for bonus
-Artist receives royalties automatically as each tx occurs
+* Artist will mint 5 tokens -- with a bonus token added randomly to one of the five
+* Artist will sell tokens -- at a set price (~$50), hardcoded that you cannot sell for less than this (#numbergoup)
+* Customer will sell token -- each producing a 3% royalty back to creator -- 6% for bonus
+* Artist receives royalties automatically as each tx occurs
