@@ -19,8 +19,22 @@ contract Podcast is ERC721Full {
     
     mapping(uint => Podcast) public podcast;
     
-    function sellPrice(uint price) public {
-        
+    function setPurchasePrice (uint256 purchasePrice) public onlyCreator {
+        require(_PurchasePrice = 1 ether/50);
+        purchasePrice = _PurchasePrice;
+    }
+    
+    function setCurrentPrice(uint256 currentPrice) public onlyOwner {
+        require (currentPrice >= _PurchasePrice);
+        currentPrice = payee.transfer(_amount);
+    }
+    
+    function purchaseToken  (uint256 tokenId) public payable {
+        require msg.value >= currentPrice); // forces to pay equal or more for nft
+        require (contractAddress.exists(_tokenId)); // checks if token exists
+        address TokenSeller = contractAddress.ownerOf(_tokenId); // seller has the token
+        nftAddress.safeTransferFrom(tokenSeller, msg.sender, tokenId); // transfering
+        emit Received (msg.sender, _tokenId, msg.value, address(this).balance); // stuff happening
     }
     
     function sell(address newOwner) public {
