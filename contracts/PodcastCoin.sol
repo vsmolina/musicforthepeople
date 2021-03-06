@@ -16,7 +16,7 @@ contract Podcast is ERC721Full, Ownable {
         string Title;
         string Publisher;
     }
-    
+
     uint _PurchasePrice;
     address contractAddress = address(this);
     address buyer;
